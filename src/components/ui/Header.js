@@ -172,7 +172,8 @@ export default function Header(props) {
                                 mouseOver : event => handleClick(event)},
                         {name : "The Revolution" , link : "/revolution" , activeIndex : 2},
                         {name : "About Us" , link : "/about", activeIndex : 3},
-                        {name : "Contact Us" , link : "/contact" , activeIndex : 4}];
+                        {name : "Contact Us" , link : "/contact" , activeIndex : 4},
+                        {name : "Show Projects" , link : "/showProjects" , activeIndex : 5}];
 
 //ComponentDidMount and this runs when a component is updated
 //Here it is used to set proper url when page is refreshed

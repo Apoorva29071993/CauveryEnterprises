@@ -13,6 +13,7 @@ import Revolution from './Revolution.js';
 import AboutUs from './AboutUs.js';
 import Contact from './Contact.js';
 import Estimate from './Estimate.js';
+import ShowProjects from "./ShowProjects.js";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       <Route exact path="/about" render={(props) => <AboutUs {...props} setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
       <Route exact path="/contact" render={(props) => <Contact {...props} setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
       <Route exact path="/estimate" render={(props) => <Estimate {...props} setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
+      <Route exact path="/showProjects" render={(props) => <ShowProjects {...props} setValue={setValue} setSelectedIndex={setSelectedIndex}/>} />
       </Switch>
       <Footer setValue={setValue} setSelectedIndex={setSelectedIndex}/>
     </BrowserRouter>
