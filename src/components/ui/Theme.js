@@ -30,6 +30,13 @@ export default createMuiTheme({
         textTransform : "none",
         color : "white"
       },
+      h1: {
+        fontFamily: "Raleway",
+        fontWeight: 700,
+        fontSize: "2.5rem",
+        color: arcBlue,
+        lineHeight: 1.5
+      },
       h2 : {
         fontFamily : "Raleway",
         fontWeight : 700,
@@ -85,6 +92,49 @@ export default createMuiTheme({
       }
     },
     overrides : {
+      MuiTableSortLabel : {
+        root : {
+          "&:hover" : {
+            color : arcOrange
+          },
+          "&.MuiTableSortLabel-active" : {
+            color : arcOrange
+          }
+        },
+        icon : {
+          fill : arcOrange
+        }
+      },
+      MuiSvgIcon : {
+        root : {
+          "&.MuiSelect-icon" : {
+            fill : arcOrange
+          }
+        }
+      },
+      MuiTableCell : {
+        head : {
+          fontSize : "1rem",
+          fontWeight : 700,
+          color : arcBlue ,
+          borderColor : arcBlue,
+          borderWidth : 2
+        },
+        body : {
+          color : arcGrey,
+          borderColor : arcBlue,
+          borderWidth : 2
+        }
+      },
+      MuiFormControlLabel : {
+        label : {
+          color : arcBlue ,
+          fontWeight : 700
+        },
+        labelPlacementStart : {
+          marginLeft : 0
+        }
+      },
        MuiInputLabel : {
          root : {
           color : arcBlue ,
